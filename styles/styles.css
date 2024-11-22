@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #eaeaea;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --home-bg: url("images/about.jpeg");
+    --about-bg: url('../images/about.jpeg');
+    --projects-bg: url('../images/project.jpeg');
+    --resume-bg: url('../images/skills.jpeg');
+    --contact-bg: url('../images/contact.jpeg');
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: url('../images/about.jpeg');
+    color: var(--text-color);
+    background-size: cover;
+    background-position: center;
+    padding: 10px; /* Added padding for smaller screens */
+}
+
+.header-bg {
+    background-image: var(--home-bg);
+}
+
+.about-bg {
+    background-image: var(--about-bg);
+}
+
+.projects-bg {
+    background-image: var(--projects-bg);
+}
+
+.resume-bg {
+    background-image: var(--resume-bg);
+}
+
+.contact-bg {
+    background-image: var(--contact-bg);
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 20px; /* Adjusted padding for smaller screens */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Changed to inline-block for better responsiveness */
+    margin: 0 10px; /* Reduced margin for smaller screens */
+}
+
+nav ul li a, footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    margin-top: 20px;
+    font-size: 1.5rem; /* Responsive font size */
+}
+
+h2 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li:hover {
+    background-color: #eaeaea;
+    border-radius: 4px; 
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    body {
+        padding: 5px; /* Less padding on smaller screens */
+    }
+    
+    header {
+        font-size: 1.1rem; /* Adjust header font size */
+        padding: 15px; /* Adjust header padding */
+    }
+
+    nav ul {
+        text-align: center; /* Center the navigation */
+    }
+    
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Larger heading on mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Medium heading on mobile */
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.profile-photo {
+    width: 100%; /* Make photo responsive */
+    max-width: 150px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;  
+}
+
+.profile-container {
+    text-align: center; 
+    margin: 30px auto; 
+}
