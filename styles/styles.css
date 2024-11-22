@@ -113,7 +113,7 @@ ul li:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: var(--primary-color);
+    background-color: green;
     margin-top: 20px;
     border-top: 1px solid #ccc;
 }
